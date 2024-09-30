@@ -55,11 +55,13 @@ header .logo span{
     font-weight: bold;
 
     margin-left: 55.305px;
-
+}
+header .logo span a{
+    color: #fff;
     transition: 0.3s;
 }
-header .logo span:hover{
-    color: #ff6a6a;
+header .logo span a:hover{
+    color: #E0B0FF;
 }
 
 header .menu{
@@ -97,8 +99,8 @@ header .menu li .Contect{
     width: 81.89px;
 }
 header .menu li a:hover{
-    color: #ff6a6a;
-    border-bottom: 3px solid #ff6a6a;
+    color: #E0B0FF;
+    border-bottom: 3px solid #E0B0FF;
     font-weight: bold;
 }
 /* //header */
@@ -106,9 +108,9 @@ header .menu li a:hover{
 /* main */
 .main{
     width: 1000px;
-    height: 700px;
+    height: 650px;
 
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     /* padding-bottom: 50px; */
 
     text-align: center;
@@ -116,17 +118,36 @@ header .menu li a:hover{
 .main h1{
     font-size: 50px;
 
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
+
+.main .hr{
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
 .main h2{
     font-size: 40px;
 }
-.main h3{
-    font-size: 30px;
-    font-weight: normal;
 
-    margin-bottom: 50px;
+.main .ex{
+    width: 300px;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 50%;
+
+    transition: opacity 0.3s, transform 0.3s;
+
+    margin: 0 auto 50px auto;
 }
+.main .ex:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 .main button{
     font-size: 30px;
 
@@ -144,10 +165,18 @@ header .menu li a:hover{
     color: #000;
 }
 
+.main .mouse .mouseIcon{
+    width: 60px;
+    margin: 0 auto;
+}
+
 .main .mouse{
     text-align: center;
     font-size: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
+
+    width: 150px;
+    margin: 0 auto;
 
     animation: mouse 1s infinite ease-in-out;
 }
@@ -162,21 +191,42 @@ header .menu li a:hover{
         transform: translateY(0px);
     }
 }
+
+.main .mouse .text{
+    opacity: 0;
+
+    width: 150px;
+
+    font-size: 24px;
+    margin-top: 10px;
+
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    transform: translateY(-20px);
+
+    transition: opacity 0.3s, transform 0.5s;
+}
+.main .mouse .text.active{
+    transform: translateY(-5px);
+    opacity: 1;
+}
 /* //main */
 
 /* about */
 .about{
     width: 1200px;
-    height: 800px;
+    height: 900px;
     margin: 0 auto;
 
     /* margin-top: 0; */
-    padding-top: 50px;
+    padding: 100px 0;
 }
 
 .about h2{
     font-size: 40px;
-    color: #ff6a6a;
+    color: #E0B0FF;
 }
 .about h1{
     font-size: 50px;
@@ -192,7 +242,7 @@ header .menu li a:hover{
 
 .about .left{
     width: 400px;
-    height: 500px;
+    height: 520px;
 }
 .about .left img{
     width: 100%;
@@ -209,7 +259,7 @@ header .menu li a:hover{
     font-size: 30px;
 }
 .about .right h1 span{
-    color: #ff6a6a;
+    color: #E0B0FF;
 }
 .about .right li{
     font-size: 23px;
@@ -238,13 +288,13 @@ header .menu li a:hover{
     height: 700px;
     background-color: #eee;
 
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding-top: 100px;
 }
 
 .skills h2{
     font-size: 40px;
-    color: #ff6a6a;
+    color: #E0B0FF;
 }
 .skills h1{
     font-size: 50px;
@@ -290,14 +340,14 @@ header .menu li a:hover{
 
 }
 .skills .contents i{
-    color: #ff6a6a;
+    color: #E0B0FF;
     font-size: 40px;
 
     transition: color 0.3s;
 }
 
 .skills .contents li:hover{
-    background-color: #ff6a6a;
+    background-color: #E0B0FF;
     color: #fff;
 
     border-radius: 15px;
@@ -310,10 +360,74 @@ header .menu li a:hover{
 /* bg */
 .bg{
     width: 100%;
-    height: 700px;
+    height: 600px;
     background: url(images/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 /* //bg */
+
+/* project */
+.project{
+    height: 1100px;
+    margin-top: 0;
+}
+
+.project .projectInnerWrap{
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.projectContentsWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 45px;
+}
+
+/* @media (max-width: ){
+
+} */
+
+.project .projectContentsWrap .projectContent{
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+
+    font-size: 20px;
+    text-align: center;
+
+    padding: 20px;
+
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+.project .projectContent i{
+    color: #E0B0FF;
+    font-size: 40px;
+
+    transition: color 0.3s;
+}
+
+.project .projectContent:hover{
+    background-color: #E0B0FF;
+    color: #fff;
+
+    border-radius: 15px;
+}
+.project .projectContent:hover i{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* //project */
