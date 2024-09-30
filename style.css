@@ -23,9 +23,9 @@ html{
 /* container */
 #container{
     width: 100%;
-    height: 100%;
+    height: 800px;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/backgroundImg.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/frontend-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -38,69 +38,111 @@ header{
     width: 100%;
     height: 100px;
 
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    z-index: 9999;
+}
+header .headerInnerWrap{
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo{
-    width: 200px;
-    height: 80px;
+header .headerInnerWrap .progressWrap{
+    width: 100%;
+    height: 3px;
+
+    position: fixed;
+    top: 97px;
+    left: 0;
+
+    background-color: rgba(243, 243, 243, 0.1);
+    transition: background-color 0.3s;
 }
-header .logo span{
+header .headerInnerWrap .progressWrap .progressBar{
+    height: 100%;
+    width: 0;
+
+    background-color: #E0B0FF;
+}
+
+header .headerInnerWrap .logo{
+    width: 200px;
+    height: 100px;
+}
+header .headerInnerWrap .logo span{
     display: inline-block;
 
     text-align: center;
     font-size: 60px;
     font-weight: bold;
 
-    margin-left: 55.305px;
 }
-header .logo span a{
+@media screen and (max-width: 1200px){
+    header .headerInnerWrap .logo span{
+        margin-left: 55.305px;
+    }
+}
+header .headerInnerWrap .logo span a{
     color: #fff;
     transition: 0.3s;
 }
-header .logo span a:hover{
-    color: #E0B0FF;
+
+header .headerInnerWrap a.headerActive{
+    color: #444 !important;
 }
 
-header .menu{
+header .headerInnerWrap .logo span a:hover{
+    color: #E0B0FF !important;
+}
+
+header .headerInnerWrap .menu{
     width: 400px;
     height: 100px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin-right: 30px;
 }
-header .menu li{
+@media screen and (max-width: 1200px){
+    header .headerInnerWrap .menu{
+        margin-right: 30px;
+    }
+}
+header .headerInnerWrap .menu li{
     width: 25%;
     
     text-align: center;
 }
-header .menu li a{
+header .headerInnerWrap .menu li a{
     font-size: 20px;
     color: white;
     display: inline-block;
 
-    transition: 0.2s;
+    transition: 0.3s;
 }
-header .menu li .About{
+header .headerInnerWrap .menu li .About{
     width: 67.63px;
 }
-header .menu li .Skills{
+header .headerInnerWrap .menu li .Skills{
     width: 56.41px;
 }
-header .menu li .Project{
+header .headerInnerWrap .menu li .Project{
     width: 74.17px;
 }
-header .menu li .Contect{
+header .headerInnerWrap .menu li .Contect{
     width: 81.89px;
 }
-header .menu li a:hover{
-    color: #E0B0FF;
-    border-bottom: 3px solid #E0B0FF;
+
+header .headerInnerWrap .menu li a:hover{
+    color: #E0B0FF !important;
+    border-bottom: 2px solid #E0B0FF;
     font-weight: bold;
 }
 /* //header */
@@ -108,10 +150,10 @@ header .menu li a:hover{
 /* main */
 .main{
     width: 1000px;
-    height: 650px;
+    height: 750px;
 
-    margin: 30px auto 0 auto;
-    /* padding-bottom: 50px; */
+    margin: 0 auto;
+    padding-top: 150px;
 
     text-align: center;
 }
@@ -208,7 +250,7 @@ header .menu li a:hover{
 
     transition: opacity 0.3s, transform 0.5s;
 }
-.main .mouse .text.active{
+.main .mouse .text.mouseActive{
     transform: translateY(-5px);
     opacity: 1;
 }
@@ -217,7 +259,7 @@ header .menu li a:hover{
 /* about */
 .about{
     width: 1200px;
-    height: 900px;
+    height: 1000px;
     margin: 0 auto;
 
     /* margin-top: 0; */
@@ -234,51 +276,51 @@ header .menu li a:hover{
 
 .about .contents{
     width: 100%;
-    height: 500px;
+    height: 520px;
     margin-top: 50px;
 
     display: flex;
+    justify-content: space-between;
 }
 
-.about .left{
-    width: 400px;
+.about .contents .left{
+    width: 340px;
     height: 520px;
 }
-.about .left img{
+.about .contents .left img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
-.about .right{
+.about .contents .right{
     width: 800px;
     height: 500px;
 
-    padding-left: 20px;
+    padding-left: 30px;
 }
-.about .right h1{
-    font-size: 30px;
-}
-.about .right h1 span{
-    color: #E0B0FF;
-}
-.about .right li{
-    font-size: 23px;
+
+.about .contents .right li{
+    font-size: 36px;
     padding: 5px 0;
+    font-weight: bold;
 }
-.about .right .fa-facebook{
-    font-size: 50px;
-    color: #3b5998;
+.about .contents .right li span{
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 32px;
 }
-.about .right .fa-youtube{
-    font-size: 50px;
-    color: red;
+.about .contents .right ul .hidden{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 68px;
+    opacity: 0 !important;
+    transition: opacity 0.3s;
+
+    cursor: default;
 }
-.about .right .fa-instagram{
-    font-size: 50px;
-    color: rgb(224, 143, 224);
-}
-.about .right .fa-brands{
-    margin-right: 10px;
+.about .contents .right ul .hidden.hiddenActive{
+    opacity: 0.6 !important;
 }
 /* //about */
 
@@ -289,7 +331,7 @@ header .menu li a:hover{
     background-color: #eee;
 
     /* margin-top: 100px; */
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .skills h2{
@@ -311,7 +353,7 @@ header .menu li a:hover{
     height: 300px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     margin-top: 50px;
@@ -334,7 +376,7 @@ header .menu li a:hover{
     font-size: 20px;
     text-align: center;
 
-    padding: 20px;
+    padding: 30px;
 
     transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
 
@@ -370,13 +412,18 @@ header .menu li a:hover{
 
 /* project */
 .project{
-    height: 1100px;
+    height: 1150px;
     margin-top: 0;
+}
+@media screen and (max-width: 1216px){
+    .project{
+        height: 1550px;
+    }
 }
 
 .project .projectInnerWrap{
     width: 100%;
-    max-width: 1140px;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
 }
@@ -386,12 +433,10 @@ header .menu li a:hover{
     flex-wrap: wrap;
     justify-content: center;
 
-    gap: 45px;
+    margin-top: 50px;
+
+    gap: 75px
 }
-
-/* @media (max-width: ){
-
-} */
 
 .project .projectContentsWrap .projectContent{
     width: 350px;
