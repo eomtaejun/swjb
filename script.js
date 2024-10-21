@@ -4,7 +4,7 @@ window.addEventListener("scroll", ()=>{
     const progressWrap=document.querySelector("#container header .progressWrap");
     const headerText=document.querySelectorAll("#container header a");
   
-    if(document.documentElement.scrollTop<650){
+    if(document.documentElement.scrollTop<720){
       headerBackground.style.backgroundColor="transparent";
       progressWrap.style.backgroundColor="rgba(243, 243, 243, 0.1)";
       headerText.forEach(element => {
@@ -12,7 +12,7 @@ window.addEventListener("scroll", ()=>{
       });
     }
     else{
-      headerBackground.style.backgroundColor="#f3e7ff";
+      headerBackground.style.backgroundColor="#0d0d0d";
       progressWrap.style.backgroundColor="rgba(243, 243, 243, 1)";
       headerText.forEach(element => {
         element.classList.toggle("headerActive", true);
