@@ -42,6 +42,15 @@ mouseIcon.addEventListener("mouseleave", ()=>{
     mouseText.classList.toggle("mouseActive", false);
 });
 
+// main blur
+window.addEventListener("scroll", ()=>{
+    let scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+    let scrollHeight=400;
+    let blur=8*(1-scrollTop/scrollHeight);
+  
+    document.querySelector("#container .main").style.backdropFilter="blur("+blur+"px)";
+  });
+
 // about me image
 aboutImage=document.querySelector(".about .contents .left img");
 hiddenText=document.querySelector(".about .contents .right ul .hidden");

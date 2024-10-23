@@ -162,14 +162,28 @@ header .headerInnerWrap .menu li a:hover{
 
 /* main */
 .main{
-    width: 1000px;
-    height: 750px;
+    width: 100%;
+    height: 800px;
 
     margin: 0 auto;
     padding-top: 150px;
 
     text-align: center;
+
+    backdrop-filter: blur(8px);
 }
+
+.main #blur-box{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    backdrop-filter: blur(3px);
+}
+
 .main h1{
     font-size: 50px;
 
@@ -525,12 +539,12 @@ header .headerInnerWrap .menu li a:hover{
 
     margin-top: 50px;
 
-    gap: 75px
+    gap: 75px; /* project 수정 시 같이 수정 */
 }
 
 .project .projectContentsWrap .projectContent{
-    width: 350px;
-    height: 350px;
+    width: 350px; /* project 수정 시 같이 수정 */
+    height: 350px; /* project 수정 시 같이 수정 */
     background-color: #fff;
 
     font-size: 20px;
@@ -538,23 +552,23 @@ header .headerInnerWrap .menu li a:hover{
 
     padding: 20px;
 
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* project 수정 시 같이 수정 */
 }
 
-.project .projectContent i{
+.project .projectContent i{ /* project 수정 시 같이 수정 */
     color: #E0B0FF;
     font-size: 40px;
 
     transition: color 0.3s;
 }
 
-.project .projectContent:hover{
+.project .projectContent:hover{ /* project 수정 시 같이 수정 */
     background-color: #E0B0FF;
     color: #fff;
 
     border-radius: 15px;
 }
-.project .projectContent:hover i{
+.project .projectContent:hover i{ /* project 수정 시 같이 수정 */
     color: #fff;
 }
 /* //project */
@@ -562,7 +576,7 @@ header .headerInnerWrap .menu li a:hover{
 /* contact */
 .contact{
     width: 100%;
-    height: 700px;
+    height: 800px;
     padding-top: 100px;
 }
 
@@ -629,28 +643,24 @@ header .headerInnerWrap .menu li a:hover{
     position: relative;
 }
 
-.contact .contents .right fieldset{
-    border: none;
-}
-
-.contact .contents .right fieldset>.inputWrap{
+.contact .contents .right form>.inputWrap{
     display: flex;
     flex-direction: column;
 }
-.contact .contents .right fieldset>.inputWrap+.inputWrap{
+.contact .contents .right form>.inputWrap+.inputWrap{
     padding-top: 20px;
 }
 
-.contact .contents .right fieldset>.inputWrap label{
+.contact .contents .right form>.inputWrap label{
     font-size: 1.2rem;
 }
 
-.contact .contents .right fieldset>.inputWrap input[class="info-input"]{
+.contact .contents .right form>.inputWrap input[class="info-input"]{
     width: 800px;
     height: 30px;
 }
 
-.contact .contents .right fieldset>.inputWrap textarea{
+.contact .contents .right form>.inputWrap textarea{
     width: 800px;
     height: 200px;
 
@@ -662,12 +672,12 @@ header .headerInnerWrap .menu li a:hover{
 }
 
 
-.contact .contents .right fieldset>button{
+.contact .contents .right form>button{
     border-radius: 5px;
     box-shadow: 3px 3px 10px #ccc;
 }
 
-.contact .contents .right fieldset>button[type="submit"]{
+.contact .contents .right form>button[type="submit"]{
     width: 800px;
     height: 30px;
 
@@ -683,7 +693,7 @@ header .headerInnerWrap .menu li a:hover{
     cursor: pointer;
 }
 
-.contact .contents .right fieldset>button[type="reset"]{
+.contact .contents .right form>button[type="reset"]{
     width: 800px;
     height: 30px;
 
