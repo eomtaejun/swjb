@@ -461,16 +461,14 @@ header .headerInnerWrap .menu li a:hover{
 }
 
 .skills .SkillsContentsWrap h3{
-    /* padding-left: 10px;
-    padding-top: 10px; */
     font-size: 35px;
-    /* text-align: start; */
     margin-bottom: 30px;
+    cursor: default;
 }
 .skills .SkillsContentsWrap p{
-    /* margin-bottom: 10px; */
     font-size: 28px;
     font-weight: bold;
+    cursor: default;
 }
 .skills .SkillsContentsWrap p+p{
     margin-top: 10px;
@@ -478,6 +476,7 @@ header .headerInnerWrap .menu li a:hover{
 .skills .SkillsContentsWrap i{
     /* color: #ffd700; */
     font-size: 28px;
+    cursor: default;
 
     transition: color 0.35s;
 }
