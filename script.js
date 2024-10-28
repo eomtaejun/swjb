@@ -1,24 +1,24 @@
 // header
 window.addEventListener("scroll", ()=>{
-    const headerBackground=document.querySelector("#container header");
-    const progressWrap=document.querySelector("#container header .progressWrap");
-    const headerText=document.querySelectorAll("#container header a");
-  
-    if(document.documentElement.scrollTop<720){
-      headerBackground.style.backgroundColor="transparent";
-      progressWrap.style.backgroundColor="rgba(243, 243, 243, 0.1)";
-      headerText.forEach(element => {
-        element.classList.toggle("headerActive", false);
-      });
-    }
-    else{
-      headerBackground.style.backgroundColor="#0d0d0d";
-      progressWrap.style.backgroundColor="rgba(243, 243, 243, 1)";
-      headerText.forEach(element => {
-        element.classList.toggle("headerActive", true);
-      });
-    }
-  });
+  const headerBackground=document.querySelector("#container header");
+  const progressWrap=document.querySelector("#container header .progressWrap");
+  const headerText=document.querySelectorAll("#container header a");
+
+  if(document.documentElement.scrollTop<720){
+    headerBackground.style.backgroundColor="transparent";
+    progressWrap.style.backgroundColor="rgba(243, 243, 243, 0.1)";
+    headerText.forEach(element => {
+      element.classList.toggle("headerActive", false);
+    });
+  }
+  else{
+    headerBackground.style.backgroundColor="#0d0d0d";
+    progressWrap.style.backgroundColor="rgba(243, 243, 243, 1)";
+    headerText.forEach(element => {
+      element.classList.toggle("headerActive", true);
+    });
+  }
+});
 
 // progress bar
 let progressBar=document.querySelector("header .progressWrap .progressBar");
@@ -61,3 +61,20 @@ aboutImage.addEventListener("mouseenter", ()=>{
 aboutImage.addEventListener("mouseleave", ()=>{
     hiddenText.classList.toggle("hiddenActive", false);
 });
+
+// top button
+window.addEventListener("scroll", ()=>{
+  const top_btn=document.querySelector(".top-button");
+  
+  if(document.documentElement.scrollTop<720){
+    setTimeout(()=>{
+      top_btn.style.transform="translateX(999999px)";
+    }, 350);
+    top_btn.style.opacity="0";
+  }
+  else{
+    top_btn.style.transform="translateX(0)";
+    top_btn.style.opacity="1";
+  }
+});
+

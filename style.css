@@ -45,7 +45,7 @@ header{
 }
 header .headerInnerWrap{
     width: 100%;
-    max-width: 1320px;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
 
@@ -86,7 +86,7 @@ header .headerInnerWrap .logo span{
     font-weight: bold;
 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 /* @media screen and (max-width: 1320px){
@@ -385,7 +385,7 @@ header .headerInnerWrap .menu li a:hover{
 
 .about .about-bgc{
     position: absolute;
-    top: 390px;
+    top: 380px;
     left: 0;
     z-index: -1;
 
@@ -505,20 +505,15 @@ header .headerInnerWrap .menu li a:hover{
 /* project */
 .project{
     width: 100%;
-    height: 1150px;
+    height: 900px;
     margin-top: 0;
     padding: 100px 0;
-    background-color: #eee;
-}
-@media screen and (max-width: 1216px){
-    .project{
-        height: 1550px;
-    }
+    background-color: #f7f7f7;
 }
 
 .project .projectInnerWrap{
     width: 100%;
-    max-width: 1320px;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
 }
@@ -532,19 +527,107 @@ header .headerInnerWrap .menu li a:hover{
     color: #000;
 }
 
-.projectContentsWrap{
+.project .projectContentsWrap{
+    width: 1200px;
+    height: 450px;
+    margin-top: 50px;
+
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15),
+    0 3px 7px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.project .projectContentsWrap>.content{
+    height: 450px;
+    padding: 20px;
+    
+    flex: 1;
+    /* overflow: hidden; */
+
+    transition: flex 0.4s ease-in-out;
+}
+.project .projectContentsWrap>.content:hover{
+    flex: 2;
+}
+.project .projectContentsWrap>.content:hover>.text{
+    opacity: 1;
+}
+
+.project .projectContentsWrap>.content:nth-child(1){
+    background-color: #bfbfbf;
+}
+.project .projectContentsWrap>.content:nth-child(2){
+    background-color: #d1d1d1;
+}
+.project .projectContentsWrap>.content:nth-child(3){
+    background-color: #e5e5e5;
+}
+
+.project .projectContentsWrap>.content>.title{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.project .projectContentsWrap>.content>.img-box{
+    width: 90%;
+    height: 200px;
+    margin: 10px auto;
+}
+.project .projectContentsWrap>.content:nth-child(1)>.img-box{
+    background: url(images/c_program_project.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.project .projectContentsWrap>.content:nth-child(2)>.img-box{
+    background: url(images/web_portfolio_school.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.project .projectContentsWrap>.content:nth-child(3)>.img-box{
+    background: url(images/web_portfolio_mrym.png) no-repeat;
+    background-size: contain;
+
+    background-position: center;
+}
+
+.project .projectContentsWrap>.content>.text{
+    font-size: 1.1rem;
+    opacity: 0;
+
+    transition: opacity 0.4s ease-in-out;
+}
+.project .projectContentsWrap>.content>.text>a{
+    margin-top: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: #ffd700;
+    border-radius: 5px;
+}
+
+/* .project .projectContentsWrap>.content:hover~.content{
+    width: 200px !important;
+} */
+
+
+/* ///지울것들/// */
+/* .projectContentsWrap{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     margin-top: 50px;
 
-    gap: 75px; /* project 수정 시 같이 수정 */
+    gap: 75px; project 수정 시 같이 수정
 }
 
 .project .projectContentsWrap .projectContent{
-    width: 350px; /* project 수정 시 같이 수정 */
-    height: 350px; /* project 수정 시 같이 수정 */
+    width: 350px; project 수정 시 같이 수정
+    height: 350px; project 수정 시 같이 수정
     background-color: #fff;
 
     font-size: 20px;
@@ -552,25 +635,25 @@ header .headerInnerWrap .menu li a:hover{
 
     padding: 20px;
 
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* project 수정 시 같이 수정 */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; project 수정 시 같이 수정
 }
 
-.project .projectContent i{ /* project 수정 시 같이 수정 */
+.project .projectContent i{ project 수정 시 같이 수정
     color: #E0B0FF;
     font-size: 40px;
 
     transition: color 0.3s;
 }
 
-.project .projectContent:hover{ /* project 수정 시 같이 수정 */
+.project .projectContent:hover{ project 수정 시 같이 수정
     background-color: #E0B0FF;
     color: #fff;
 
     border-radius: 15px;
 }
-.project .projectContent:hover i{ /* project 수정 시 같이 수정 */
+.project .projectContent:hover i{ project 수정 시 같이 수정
     color: #fff;
-}
+} */
 /* //project */
 
 /* contact */
@@ -616,11 +699,12 @@ header .headerInnerWrap .menu li a:hover{
 
     /* border: 1px solid #ccc; */
     border-radius: 5px;
-    box-shadow: 3px 3px 10px #ccc,
-                -3px -3px 7px #eee;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15),
+                0 3px 7px rgba(0, 0, 0, 0.1);
 
     padding: 15px;
 
+    cursor: pointer;
     transition: transform 0.2s;
 }
 .contact .contents .left>.info:hover{
@@ -674,7 +758,8 @@ header .headerInnerWrap .menu li a:hover{
 
 .contact .contents .right form>button{
     border-radius: 5px;
-    box-shadow: 3px 3px 10px #ccc;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15),
+                0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
 .contact .contents .right form>button[type="submit"]{
@@ -707,4 +792,37 @@ header .headerInnerWrap .menu li a:hover{
     background-color: #eee;
 
     cursor: pointer;
+}
+/* //contact */
+
+/* top button */
+button.top-button{
+    width: 40px;
+    height: 40px;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15),
+                0 3px 7px rgba(0, 0, 0, 0.1);
+    
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999;
+
+    opacity: 0;
+    transform: translateX(999999px);
+    transition: opacity 0.35s;
+    
+    cursor: pointer;
+}
+
+button.top-button>a#top{
+    width: 40px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
