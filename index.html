@@ -5,9 +5,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+    <!-- font awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- //font awesome -->
+     <!-- font-family -->
+    <!-- poppins / title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- roboto / text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- //font-family -->
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,7 +34,7 @@
 
 		<!-- header -->
 		<header>
-			<div class="headerInnerWrap">
+			<div class="headerInnerWrap font-family-Poppins">
 				<div class="logo">
 					<span><a href="#main-link">ETJ</a></span>
 				</div>
@@ -40,17 +56,17 @@
 		<div class="main" id="main-link">
             <!-- <div id="blur-box"></div> -->
 			<div class="mainInnerWrap">
-				<h1>- 엄 태 준 -</h1>
-				<h2>[ Front-end Developer's Portfolio ]</h2>
+				<h1 class="font-family-Poppins">- 엄 태 준 -</h1>
+				<h2 class="font-family-Poppins">[ Front-end Developer's Portfolio ]</h2>
 				<div class="hr"></div>
-				<p class="ex">안녕하세요. <br> 성장할 준비를 하고 있는 <br> 엄태준입니다.</p>
-				<button><a href="https://github.com/eomtaejun/swjb" target="_blank">Download CV</a></button>
+				<p class="ex font-family-Roboto">안녕하세요. <br> 성장할 준비를 하고 있는 <br> 엄태준입니다.</p>
+				<button><a href="https://github.com/eomtaejun/swjb" target="_blank" class="font-family-Roboto">Download CV</a></button>
 
 				<div class="mouse">
 					<div class="mouseIcon">
 						<a href="#about-link"><i class="fa-solid fa-computer-mouse" style="color: #fff;"></i></a>
 					</div>
-					<p class="text">더 알아보기</p>
+					<p class="text font-family-Roboto">더 알아보기</p>
 				</div>
 			</div>
 		</div>
@@ -62,15 +78,15 @@
 	<!-- about -->
 	<div class="about" id="about-link">
 		<div class="aboutInnerWrap">
-			<h2>Who Am I</h2>
-			<h1>About Me</h1>
+			<h2 class="font-family-Poppins">Who Am I</h2>
+			<h1 class="font-family-Poppins">About Me</h1>
 	
 			<div class="contents">
 				<div class="left">
 					<img src="images/bombay_cat.jpg" alt="">
 				</div>
 	
-				<div class="right">
+				<div class="right font-family-Roboto">
 					<ul>
 						<li>Name <span>엄태준</span></li>
 						<li>Birth <span>2008. 03. 06.</span></li>
@@ -96,27 +112,27 @@
 	<!-- skills -->
 	<div class="skills" id="skills-link">
 		<div class="skillsInnerWrap">
-			<h2>Skills</h2>
-			<h1>What I Do</h1>
+			<h2 class="font-family-Poppins">Skills</h2>
+			<h1 class="font-family-Poppins">What I Do</h1>
 
 			<ul class="SkillsContentsWrap">
-				<li class="wicd">
-					<h3>What I can do</h3>
+				<li class="wicd font-family-Roboto">
+					<h3 class="font-family-Poppins">What I can do</h3>
 					<p><i class="fa-brands fa-html5" style="color: #E34F26;"></i> HTML5</p>
 					<p><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i> CSS3</p>
 					<p><i class="fa-brands fa-js" style="color: #F7DF1E;"></i> JavaScript</p>
 				</li>
 
-				<li class="wihd">
-					<h3>What I have done</h3>
+				<li class="wihd font-family-Roboto">
+					<h3 class="font-family-Poppins">What I have done</h3>
                     <p><i class="fa-brands fa-bootstrap" style="color: #7952B3;"></i> Bootstrap</p>
                     <p><i class="fa-brands fa-figma" style="color: #FF7262;"></i> Figma</p>
 					<p><i class="fa-solid fa-c" style="color: #659AE2;"></i> C Language</p>
 					<p><i class="fa-brands fa-node-js" style="color: #339933;"></i> Node.js</p>
 				</li>
 
-				<li class="wiwd">
-					<h3>What I will do</h3>
+				<li class="wiwd font-family-Roboto">
+					<h3 class="font-family-Poppins">What I will do</h3>
 					<p><i class="fa-brands fa-react" style="color: #61DAFB;"></i> React.js</p>
                     <p><i class="fa-brands fa-vuejs" style="color: #42B883;"></i> Vue.js</p>
                     <p><i class="fa-brands fa-php" style="color: #777BB4;"></i> PHP</p>
@@ -137,71 +153,26 @@
 	<!-- projects -->
 	<div class="project" id="project-link">
 		<div class="projectInnerWrap">
-			<h2>Projects</h2>
-			<h1>What I Did</h1>
+			<h2 class="font-family-Poppins">Projects</h2>
+			<h1 class="font-family-Poppins">What I Did</h1>
 
 			<div class="projectContentsWrap">
 				<div class="content">
-					<p class="title">C program project <br>(school)</p>
+					<p class="title font-family-Poppins">C program project <br>(school)</p>
 					<div class="img-box"></div>
-					<p class="text">학교 수행평가로 제출한 프로그램. <br>배드민턴 서브 코트를 구해주는 프로그램이다. <br><a href="https://www.miricanvas.com/v/13t5bi2" target="_blank">MiriCanvas 바로가기</a></p>
+					<p class="text font-family-Roboto">학교 수행평가로 제출한 프로그램. <br>배드민턴 서브 코트를 구해주는 프로그램이다. <br><a href="https://www.miricanvas.com/v/13t5bi2" target="_blank">MiriCanvas 바로가기</a></p>
 				</div>
 				<div class="content">
-					<p class="title">Web portfolio <br>(school)</p>
+					<p class="title font-family-Poppins">Web portfolio <br>(school)</p>
 					<div class="img-box"></div>
-					<p class="text">학교 수행평가로 제출한 웹 포트폴리오. <br>나의 소개를 조금 담은 포트폴리오이다. <br><a href="https://github.com/eomtaejun/swjb" target="_blank">GitHub 바로가기</a></p>
+					<p class="text font-family-Roboto">학교 수행평가로 제출한 웹 포트폴리오. <br>나의 소개를 조금 담은 포트폴리오이다. <br><a href="https://github.com/eomtaejun/swjb" target="_blank">GitHub 바로가기</a></p>
 				</div>
 				<div class="content">
-					<p class="title">Web portfolio <br>(미래유망) <span style="opacity: 0.3;">(제작중)</span></p>
+					<p class="title font-family-Poppins">Web portfolio <br>(미래유망) <span style="opacity: 0.3;">(제작중)</span></p>
 					<div class="img-box"></div>
-					<p class="text">미래유망 활동에서 제작하고 있는 웹 포트폴리오. <br>나의 미래에 관한 내용을 담은 포트폴리오이다. <br><a href="https://github.com/eomtaejun/mrym-portfolio" target="_blank">GitHub 바로가기</a></p>
+					<p class="text font-family-Roboto">미래유망 활동에서 제작하고 있는 웹 포트폴리오. <br>나의 미래에 관한 내용을 담은 포트폴리오이다. <br><a href="https://github.com/eomtaejun/mrym-portfolio" target="_blank">GitHub 바로가기</a></p>
 				</div>
 			</div>
-
-			<!-- <div class="projectContentsWrap">
-				<div class="projectContent">
-					<h3><i class="fa-brands fa-html5"></i> HTML</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque delectus quibusdam, in
-						autem mollitia nobis pariatur rerum minus nam veniam, obcaecati, aut eius excepturi? Eligendi
-						aspernatur consectetur ea aperiam.</p>
-				</div>
-
-				<div class="projectContent">
-					<h3><i class="fa-brands fa-css3-alt"></i> CSS</h3>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat illum iure eaque. Eum impedit
-						dolor numquam repellat earum, nemo, adipisci consequatur totam repellendus quod aut facilis
-						quidem obcaecati non optio!</p>
-				</div>
-
-				<div class="projectContent">
-					<h3><i class="fa-brands fa-js"></i> JavaScript</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt eos maxime rem cumque
-						architecto praesentium unde optio! Id quia inventore harum in, nihil voluptate recusandae eum
-						libero sed beatae?</p>
-				</div>
-
-				<div class="projectContent">
-					<h3><i class="fa-brands fa-html5"></i> HTML</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque delectus quibusdam, in
-						autem mollitia nobis pariatur rerum minus nam veniam, obcaecati, aut eius excepturi? Eligendi
-						aspernatur consectetur ea aperiam.</p>
-				</div>
-
-				<div class="projectContent">
-					<h3><i class="fa-brands fa-css3-alt"></i> CSS</h3>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat illum iure eaque. Eum impedit
-						dolor numquam repellat earum, nemo, adipisci consequatur totam repellendus quod aut facilis
-						quidem obcaecati non optio!</p>
-				</div>
-
-				<div class="projectContent">
-					<h3><i class="fa-brands fa-js"></i> JavaScript</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt eos maxime rem cumque
-						architecto praesentium unde optio! Id quia inventore harum in, nihil voluptate recusandae eum
-						libero sed beatae?</p>
-				</div>
-			</div> -->
-
 		</div>
 	</div>
 	<!-- //projects -->
@@ -209,29 +180,29 @@
 	<!-- contact -->
 	<div class="contact" id="contact-link">
 		<div class="contactInnerWrap">
-			<h2>Contact</h2>
-			<h1>Contact With Me</h1>
+			<h2 class="font-family-Poppins">Contact</h2>
+			<h1 class="font-family-Poppins">Contact With Me</h1>
 
 			<div class="contents">
 				<div class="left">
 					<div class="info">
-						<h3><i class="fa-solid fa-phone"></i> Phone</h3>
-						<p>010 - 9725 - 2582</p>
+						<h3 class="font-family-Poppins"><i class="fa-solid fa-phone"></i> Phone</h3>
+						<p class="font-family-Roboto">010 - 9725 - 2582</p>
 					</div>
 
 					<div class="info">
-						<h3><i class="fa-solid fa-envelope"></i> E-mail</h3>
-						<p>tajuneom@gmail.com</p>
+						<h3 class="font-family-Poppins"><i class="fa-solid fa-envelope"></i> E-mail</h3>
+						<p class="font-family-Roboto">tajuneom@gmail.com</p>
 					</div>
 
 					<div class="info">
-						<h3><i class="fa-solid fa-location-dot"></i> Address</h3>
-						<p>Suwon, Yeongtong-gu</p>
+						<h3 class="font-family-Poppins"><i class="fa-solid fa-location-dot"></i> Address</h3>
+						<p class="font-family-Roboto">Suwon, Yeongtong-gu</p>
 					</div>
 				</div>
 
 				<div class="right">
-					<form action="">
+					<form action="" class="font-family-Roboto">
 						<div class="inputWrap">
 							<label for="input-name">Name</label>
 							<input type="text" id="input-name" class="info-input">
@@ -247,13 +218,12 @@
 							<textarea name="" id="input-memo"></textarea>
 						</div>
 
-						<button type="submit">Send</button>
-						<button type="reset">Reset</button>
+						<button type="submit" class="font-family-Roboto">Send</button>
+						<button type="reset" class="font-family-Roboto">Reset</button>
 					</form>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<!-- top button -->

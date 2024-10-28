@@ -18,6 +18,13 @@ li{
 html{
     scroll-behavior: smooth;
 }
+.font-family-Poppins{ /* title */
+    font-family: "Poppins", sans-serif !important;
+    font-weight: bold;
+}
+.font-family-Roboto{ /* text */
+    font-family: "Roboto", sans-serif !important;
+}
 /* //초기화 */
 
 /* container */
