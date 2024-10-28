@@ -67,14 +67,10 @@ window.addEventListener("scroll", ()=>{
   const top_btn=document.querySelector(".top-button");
   
   if(document.documentElement.scrollTop<720){
-    setTimeout(()=>{
-      top_btn.style.transform="translateX(999999px)";
-    }, 350);
-    top_btn.style.opacity="0";
+    top_btn.style.display="none";
   }
   else{
-    top_btn.style.transform="translateX(0)";
-    top_btn.style.opacity="1";
+    top_btn.style.display="block";
   }
 });
 
