@@ -777,8 +777,6 @@ header .headerInnerWrap .menu li a:hover{
     width: 800px;
     height: 30px;
 
-    margin-top: 15px;
-
     position: absolute;
     top: 388px;
 
@@ -792,8 +790,6 @@ header .headerInnerWrap .menu li a:hover{
 .contact .contents .right form>button[type="reset"]{
     width: 800px;
     height: 30px;
-
-    margin-top: 15px;
 
     position: absolute;
     top: 433px;
