@@ -488,13 +488,13 @@ header .headerInnerWrap .menu li a:hover{
 }
 
 .skills .SkillsContentsWrap>li.wicd:hover{
-    max-height: 294px;
+    max-height: 264px;
 }
 .skills .SkillsContentsWrap>li.wihd:hover{
-    max-height: 344px;
+    max-height: 314px;
 }
 .skills .SkillsContentsWrap>li.wiwd:hover{
-    max-height: 444px;
+    max-height: 404px;
 }
 
 .skills .SkillsContentsWrap li:hover i{
@@ -719,6 +719,8 @@ header .headerInnerWrap .menu li a:hover{
 
     min-width: 100px;
     min-height: 30px;
+
+    border-radius: 5px;
 }
 
 .contact .contents .right form>button{
