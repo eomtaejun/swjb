@@ -546,7 +546,7 @@ header .headerInnerWrap .menu li a:hover{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15),
-    0 3px 7px rgba(0, 0, 0, 0.1);
+                0 3px 7px rgba(0, 0, 0, 0.1);
 
     display: flex;
     justify-content: center;
@@ -620,52 +620,6 @@ header .headerInnerWrap .menu li a:hover{
     background-color: #ffd700;
     border-radius: 5px;
 }
-
-/* .project .projectContentsWrap>.content:hover~.content{
-    width: 200px !important;
-} */
-
-
-/* ///지울것들/// */
-/* .projectContentsWrap{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    margin-top: 50px;
-
-    gap: 75px; project 수정 시 같이 수정
-}
-
-.project .projectContentsWrap .projectContent{
-    width: 350px; project 수정 시 같이 수정
-    height: 350px; project 수정 시 같이 수정
-    background-color: #fff;
-
-    font-size: 20px;
-    text-align: center;
-
-    padding: 20px;
-
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; project 수정 시 같이 수정
-}
-
-.project .projectContent i{ project 수정 시 같이 수정
-    color: #E0B0FF;
-    font-size: 40px;
-
-    transition: color 0.3s;
-}
-
-.project .projectContent:hover{ project 수정 시 같이 수정
-    background-color: #E0B0FF;
-    color: #fff;
-
-    border-radius: 15px;
-}
-.project .projectContent:hover i{ project 수정 시 같이 수정
-    color: #fff;
-} */
 /* //project */
 
 /* contact */
